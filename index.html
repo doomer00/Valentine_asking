@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Structure of this html:
+
+    First page would be excuse me, i have a question for you
+
+    Second page is stating valentnie's day and "i have a question for you"
+
+    Third page is asking her out 
+
+    Lastly is yay -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>howie's big questions</title>
+            <link rel="stylesheet" type="text/css" href="styles.css?v=2">
+        <link rel="icon" href="favicon.jpg">
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .slide {
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+    
+            h1, button {
+                font-size: 5vw; /* Responsive font size */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Slide 1 -->
+        <div class="slide" id="slide1">
+
+            <div class="gif_container" id="gif1">
+                <img src="https://media.tenor.com/WX8OXgN5VpMAAAAi/waving-wave-hello.gif"
+                width="498" height="434" alt="Waving Wave Hello Sticker - Waving Wave Hello Wave Bye Stickers" 
+                style="max-width: 522px; background-color: unset;"
+                >
+            </div>
+
+            <h1>Excuse me!</h1>
+            <h2>I have a question for you</h2>
+            <button onclick="nextSlide()">What's your question?</button>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" id="slide2" style="position: relative; top: 120px;">
+            
+            <div class="gif_container" id="gif2" >
+                <img src="https://media.tenor.com/alQAlfx97SAAAAAi/awkward-emoji.gif"
+                width="300" height="300" alt="Awkward Emoji Sticker - Awkward Emoji Awkwardflush Stickers" 
+                style="max-width: 300px; max-height: 300px; background-color: unset;"
+                >
+            </div>
+
+            <h1>Soooooooo,</h1>
+            <h2> The upcoming Wednesday is Valentine's day</h2>            
+            <button onclick="nextSlide()">What about it?</button>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" id="slide3">
+
+            <div class="gif_container" id="gf3">
+                <img src="https://media.tenor.com/ivKWdfdbV3EAAAAi/goma-goma-cat.gif" 
+                width="449" height="450" alt="Goma Goma Cat Sticker - Goma Goma Cat Goma Peach Stickers" 
+                style="max-width: 450px; background-color: unset;"
+                >
+            </div>
+
+            <h1>Do you wanna be my Valentine?</h1>
+            <button id="yesButton">Yesss</button>
+            <button id="noButton">NOO</button>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide" id="slide4">
+
+            <div class="gif_container" id="gif3">
+                <img src="https://media.tenor.com/uEKZlGV8Ny0AAAAi/cat-cute.gif"
+                width="197.54330708661416" height="256" alt="Cat Cute Sticker - Cat Cute Playing Stickers" 
+                style="max-width: 280px; background-color: unset;"
+                >
+            </div>
+
+            <h1>Happy happy</h1>
+            <h2>Put on a pretty dwress cuz we gonna eat pasta hehe</h2>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
